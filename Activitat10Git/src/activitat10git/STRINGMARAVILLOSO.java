@@ -5,12 +5,7 @@
  */
 package activitat10git;
 public class STRINGMARAVILLOSO{
-    public static void main(String[] args){
-        String M = "MARAVILLOSO";
-        
-        System.out.println("LA versió que tenim a github ha estat actualitzada i és mes actual que la que tinc en local");
- 
-        //Imprime los primeros dos triangulos de izq a derecha de la primera parte (parte superios)
+    public static void triangleSup (String M) {
         for (int i =0; i<M.length();i++){
             //Imprime espacios de la primera parte para el primer triangulo 
             for (int j=0; j < i  ;++j){
@@ -30,6 +25,9 @@ public class STRINGMARAVILLOSO{
             }
             System.out.println();
         }
+    }
+    public static void triangleInf (String M) {
+        //Imprime los primeros dos triangulos de izq a derecha de la primera parte (parte superios)
         //Imprime los segundos dos triangulos de izq a derecha de la segunda parte (parte inferior)
         for (int i =0; i<M.length();i++){
             //Imprime primer triangulo de la segunda parte
@@ -46,5 +44,15 @@ public class STRINGMARAVILLOSO{
             }
             System.out.println();
         }
+    }
+    public static void main(String[] args){
+        String M = "MARAVILLOSO";
+        
+        System.out.println("LA versió que tenim a github ha estat actualitzada i és mes actual que la que tinc en local");
+ 
+        triangleSup(M);
+        
+        triangleInf(M);
+        
     }    
 }
